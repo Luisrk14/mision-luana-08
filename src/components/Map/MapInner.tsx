@@ -127,13 +127,13 @@ export default function MapInner({ coords, titulo, direccion }: MapInnerProps) {
     >
       {/* BOTÓN "TOCA PARA EXPLORAR" (Ubicado abajo para no estorbar el modal) */}
       {!isMapInteractive && (
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-[1000]">
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-[1000] w-full px-4 flex justify-center pointer-events-none">
           <button
             onClick={handleActivate}
-            className="bg-[#1e0a3c]/95 border border-[#ff00de]/50 text-[#ff00de] px-6 py-3 rounded-full text-[10px] font-black tracking-[0.2em] uppercase shadow-[0_0_20px_rgba(255,0,222,0.4)] flex items-center gap-2 hover:scale-105 transition-transform"
+            className="pointer-events-auto bg-[#1e0a3c]/95 border border-[#ff00de]/50 text-[#ff00de] px-6 py-4 md:py-3 rounded-full text-[13px] md:text-[10px] font-black tracking-[0.2em] md:tracking-[0.2em] uppercase shadow-[0_0_20px_rgba(255,0,222,0.4)] flex items-center gap-3 md:gap-2 hover:scale-105 transition-transform max-w-[90vw]"
           >
-            <Hand className="w-4 h-4 animate-bounce text-[#00e5ff]" />
-            <span>Toca para explorar mapa</span>
+            <Hand className="w-6 h-6 md:w-4 md:h-4 shrink-0 animate-bounce text-[#00e5ff]" />
+            <span className="text-center">Toca para explorar mapa</span>
           </button>
         </div>
       )}

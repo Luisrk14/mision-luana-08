@@ -107,7 +107,7 @@ export const StoryComicSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-[#0d0614] relative overflow-hidden font-sans border-b border-[#ff00de]/20">
+    <section className="py-8 bg-[#0d0614] relative overflow-hidden font-sans border-b border-[#ff00de]/20">
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 max-w-6xl relative z-10">
