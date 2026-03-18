@@ -1,0 +1,92 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== CONFIGURACIÓN GLOBAL ===== */
+
+html {
+  scroll-behavior: smooth; /* para un desplazamiento suave al hacer clic en enlaces internos */
+  background-color: #faf9f6; /* un beige claro y elegante */
+  color: #3a4b3e; /* un verde oscuro elegante */
+
+  /* Firefox */
+  scrollbar-width: auto;
+  scrollbar-color: #6b7f6b #f2f0eb;
+}
+
+/* CLASES DE UTILIDAD PARA FUENTES */
+.font-regency {
+  font-family: "Pinyon Script", cursive;
+}
+.font-cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* ===== TIPOGRAFÍAS ===== */
+
+.font-cinzel {
+  font-family: "Cinzel", serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ===== TARJETA GLASS ===== */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 20px 40px -10px rgba(42, 59, 42, 0.1);
+}
+
+/* ===== TEXTO DORADO ANIMADO ===== */
+
+.text-gradient-gold {
+  background: linear-gradient(
+    to right,
+    #b8860b,
+    #d4af37,
+    #daa520,
+    #f3e5ab,
+    #b8860b
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ===== SCROLL PERSONALIZADO (CLÁSICO PERO MÁS GRUESO) ===== */
+
+/* Chrome / Edge / Safari */
+::-webkit-scrollbar {
+  width: 12px; /* 🔥 más grueso pero elegante */
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f0eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6b7f6b;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a6e5a;
+}
+
+.leaflet-tile {
+  filter: brightness(0.85) contrast(1.3);
+}
